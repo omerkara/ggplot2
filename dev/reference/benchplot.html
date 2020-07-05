@@ -211,7 +211,7 @@ Broken down into construct, build, render and draw times.</h1>
 Broken down into construct, build, render and draw times.</p>
     </div>
 
-    <pre class="usage"><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/benchplot.html'>benchplot</a></span>(<span class='kw'>x</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/benchplot.html'>benchplot</a></span>(<span class='kw'>x</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -224,25 +224,25 @@ Broken down into construct, build, render and draw times.</p>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/benchplot.html'>benchplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>())</div><div class='output co'>#&gt;        step user.self sys.self elapsed
-#&gt; 1 construct     0.002    0.001   0.002
-#&gt; 2     build     0.014    0.000   0.014
-#&gt; 3    render     0.023    0.000   0.022
-#&gt; 4      draw     0.029    0.000   0.029
-#&gt; 5     TOTAL     0.068    0.001   0.067</div><div class='input'><span class='fu'><a href='https://ggplot2.tidyverse.org/reference/benchplot.html'>benchplot</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>() <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/facet_grid.html'>facet_grid</a></span>(<span class='kw'>.</span> <span class='op'>~</span> <span class='kw'>cyl</span>))</div><div class='output co'>#&gt;        step user.self sys.self elapsed
-#&gt; 1 construct     0.003    0.000   0.003
-#&gt; 2     build     0.033    0.000   0.033
-#&gt; 3    render     0.061    0.000   0.062
-#&gt; 4      draw     0.048    0.001   0.048
-#&gt; 5     TOTAL     0.145    0.001   0.146</div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/benchplot.html'>benchplot</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/geom_point.html'>geom_point</a></span>())</div><div class='output co'>#&gt;        step user.self sys.self elapsed
+#&gt; 1 construct     0.005    0.000   0.005
+#&gt; 2     build     0.058    0.002   0.061
+#&gt; 3    render     0.083    0.001   0.084
+#&gt; 4      draw     0.109    0.001   0.110
+#&gt; 5     TOTAL     0.255    0.004   0.260</div><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/benchplot.html'>benchplot</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/geom_point.html'>geom_point</a></span>() <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/facet_grid.html'>facet_grid</a></span>(<span class='kw'>.</span> <span class='op'>~</span> <span class='kw'>cyl</span>))</div><div class='output co'>#&gt;        step user.self sys.self elapsed
+#&gt; 1 construct     0.006    0.000   0.007
+#&gt; 2     build     0.114    0.001   0.116
+#&gt; 3    render     0.211    0.001   0.211
+#&gt; 4      draw     0.148    0.001   0.149
+#&gt; 5     TOTAL     0.479    0.003   0.483</div><div class='input'>
 <span class='co'># With tidy eval:</span>
-<span class='kw'>p</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>expr</a></span>(<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/geom_point.html'>geom_point</a></span>())
-<span class='fu'><a href='https://ggplot2.tidyverse.org/reference/benchplot.html'>benchplot</a></span>(<span class='op'>!</span><span class='op'>!</span><span class='kw'>p</span>)</div><div class='img'><img src='benchplot-1.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt;        step user.self sys.self elapsed
-#&gt; 1 construct     0.002        0   0.002
-#&gt; 2     build     0.015        0   0.015
-#&gt; 3    render     0.023        0   0.023
-#&gt; 4      draw     0.029        0   0.029
-#&gt; 5     TOTAL     0.069        0   0.069</div></pre>
+<span class='kw'>p</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>expr</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/ggplot.html'>ggplot</a></span>(<span class='kw'>mtcars</span>, <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/aes.html'>aes</a></span>(<span class='kw'>mpg</span>, <span class='kw'>wt</span>)) <span class='op'>+</span> <span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/geom_point.html'>geom_point</a></span>())
+<span class='fu'><a href='https://rdrr.io/pkg/ggplot2/man/benchplot.html'>benchplot</a></span>(<span class='op'>!</span><span class='op'>!</span><span class='kw'>p</span>)</div><div class='img'><img src='benchplot-1.png' alt='' width='700' height='433' /></div><div class='output co'>#&gt;        step user.self sys.self elapsed
+#&gt; 1 construct     0.006    0.000   0.006
+#&gt; 2     build     0.046    0.000   0.046
+#&gt; 3    render     0.093    0.001   0.094
+#&gt; 4      draw     0.088    0.001   0.088
+#&gt; 5     TOTAL     0.233    0.002   0.234</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
