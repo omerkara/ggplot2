@@ -237,31 +237,31 @@ section of Advanced R." />
     <div class="ref-description">
     
 <ul>
-<li><p><code><a href='https://rdrr.io/pkg/rlang/man/sym.html'>sym</a>()</code> creates a symbol from a string and
-<code><a href='https://rdrr.io/pkg/rlang/man/sym.html'>syms</a>()</code> creates a list of symbols from a
+<li><p><code><a href='https://rlang.r-lib.org/reference/sym.html'>sym</a>()</code> creates a symbol from a string and
+<code><a href='https://rlang.r-lib.org/reference/sym.html'>syms</a>()</code> creates a list of symbols from a
 character vector.</p></li>
-<li><p><code><a href='https://rdrr.io/pkg/rlang/man/nse-defuse.html'>enquo</a>()</code> and
-<code><a href='https://rdrr.io/pkg/rlang/man/nse-defuse.html'>enquos</a>()</code> delay the execution of one or
-several function arguments. <code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>enquo()</a></code> returns a single quoted
+<li><p><code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>enquo</a>()</code> and
+<code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>enquos</a>()</code> delay the execution of one or
+several function arguments. <code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>enquo()</a></code> returns a single quoted
 expression, which is like a blueprint for the delayed computation.
-<code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>enquos()</a></code> returns a list of such quoted expressions.</p></li>
-<li><p><code><a href='https://rdrr.io/pkg/rlang/man/nse-defuse.html'>expr</a>()</code> quotes a new expression <em>locally</em>. It
+<code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>enquos()</a></code> returns a list of such quoted expressions.</p></li>
+<li><p><code><a href='https://rlang.r-lib.org/reference/nse-defuse.html'>expr</a>()</code> quotes a new expression <em>locally</em>. It
 is mostly useful to build new expressions around arguments
-captured with <code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>enquo()</a></code> or <code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>enquos()</a></code>:
-<code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>expr(mean(!!enquo(arg), na.rm = TRUE))</a></code>.</p></li>
-<li><p><code><a href='https://rdrr.io/pkg/rlang/man/as_name.html'>as_name</a>()</code> transforms a quoted variable name
+captured with <code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>enquo()</a></code> or <code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>enquos()</a></code>:
+<code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>expr(mean(!!enquo(arg), na.rm = TRUE))</a></code>.</p></li>
+<li><p><code><a href='https://rlang.r-lib.org/reference/as_name.html'>as_name</a>()</code> transforms a quoted variable name
 into a string. Supplying something else than a quoted variable
 name is an error.</p>
-<p>That's unlike <code><a href='https://rdrr.io/pkg/rlang/man/as_label.html'>as_label</a>()</code> which also returns
+<p>That's unlike <code><a href='https://rlang.r-lib.org/reference/as_label.html'>as_label</a>()</code> which also returns
 a single string but supports any kind of R object as input,
 including quoted function calls and vectors. Its purpose is to
 summarise that object into a single label. That label is often
 suitable as a default name.</p>
 <p>If you don't know what a quoted expression contains (for instance
-expressions captured with <code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>enquo()</a></code> could be a variable
+expressions captured with <code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>enquo()</a></code> could be a variable
 name, a call to a function, or an unquoted constant), then use
-<code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>as_label()</a></code>. If you know you have quoted a simple variable
-name, or would like to enforce this, use <code><a href='https://rdrr.io/pkg/ggplot2/man/tidyeval.html'>as_name()</a></code>.</p></li>
+<code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>as_label()</a></code>. If you know you have quoted a simple variable
+name, or would like to enforce this, use <code><a href='https://ggplot2.tidyverse.org/reference/tidyeval.html'>as_name()</a></code>.</p></li>
 </ul>
 
 <p>To learn more about tidy eval and how to use these tools, visit
