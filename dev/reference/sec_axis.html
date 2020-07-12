@@ -312,7 +312,7 @@ may consider adapting secondary axis labels.</p>
     date_breaks = <span class='st'>"6 hour"</span>,
     sec.axis = <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/sec_axis.html'>dup_axis</a></span>(
       name = <span class='st'>"Time of Day"</span>,
-      labels = <span class='kw'>scales</span>::<span class='fu'><a href='https://scales.r-lib.org//reference/label_date.html'>time_format</a></span>(<span class='st'>"%I %p"</span>)
+      labels = <span class='kw'>scales</span>::<span class='fu'><a href='https://rdrr.io/pkg/scales/man/label_date.html'>time_format</a></span>(<span class='st'>"%I %p"</span>)
     )
   )</div><div class='img'><img src='sec_axis-5.png' alt='' width='700' height='433' /></div><div class='input'>
 <span class='co'># or to transform axes for different timezones</span>
@@ -325,7 +325,7 @@ may consider adapting secondary axis labels.</p>
     sec.axis = <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/sec_axis.html'>sec_axis</a></span>(
       <span class='op'>~</span> <span class='kw'>.</span> <span class='op'>+</span> <span class='fl'>8</span> <span class='op'>*</span> <span class='fl'>3600</span>,
       name = <span class='st'>"GMT+8"</span>,
-      labels = <span class='kw'>scales</span>::<span class='fu'><a href='https://scales.r-lib.org//reference/label_date.html'>time_format</a></span>(<span class='st'>"%b %d %I %p"</span>)
+      labels = <span class='kw'>scales</span>::<span class='fu'><a href='https://rdrr.io/pkg/scales/man/label_date.html'>time_format</a></span>(<span class='st'>"%b %d %I %p"</span>)
     )
   )</div><div class='img'><img src='sec_axis-6.png' alt='' width='700' height='433' /></div><div class='input'></div></pre>
   </div>
