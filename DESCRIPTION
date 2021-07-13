@@ -1,5 +1,5 @@
 Package: ggplot2
-Version: 3.3.3.9000
+Version: 3.3.5.9000
 Title: Create Elegant Data Visualisations Using the Grammar of Graphics
 Description: A system for 'declaratively' creating graphics,
     based on "The Grammar of Graphics". You provide the data, tell 'ggplot2'
@@ -65,7 +65,7 @@ Suggests:
     sf (>= 0.7-3),
     svglite (>= 1.2.0.9001),
     testthat (>= 2.1.0),
-    vdiffr (>= 0.3.0),
+    vdiffr (>= 1.0.0),
     xml2
 Enhances: sp
 License: MIT + file LICENSE
@@ -274,4 +274,3 @@ Config/Needs/website:
     tidyr,
     forcats,
     tidyverse/tidytemplate
-
